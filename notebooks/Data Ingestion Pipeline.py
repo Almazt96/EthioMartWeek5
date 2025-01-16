@@ -34,13 +34,13 @@ def preprocess_amharic_text(df):
     return df
 
 # Fetch data from Telegram channel
-channel_data = fetch_channel_data('shegershoes123')
+channel_data = fetch_channel_data('qnashcom')
 
 # Preprocess data
 clean_data = preprocess_amharic_text(channel_data)
 
 # Save data to CSV
-clean_data.to_csv('telegram_data.csv', index=False)
+clean_data.to_csv(r'C:\Users\Almazt\OneDrive - Ethiopian Airlines\Desktop\10 Academy\EthioMart-Week 5\data/telegram_qnashcom_data.csv', index=False)
 
 # Disconnect from Telegram client
 client.disconnect()
