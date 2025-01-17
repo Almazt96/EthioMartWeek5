@@ -1,4 +1,5 @@
-# A structured workflow tailored to EthioMart project for fine-tuning Amharic NER models. Here’s a breakdown of the pipeline with coding support for each step.
+# A structured workflow tailored to EthioMart project for fine-tuning Amharic NER models. 
+# Here’s a breakdown of the pipeline with coding support for each step.
 # 1. Data Ingestion Pipeline
 # Objective: Fetch data from Telegram channels and preprocess it.
 # Libraries/Tools: telethon (for Telegram scraping), pandas, re.
