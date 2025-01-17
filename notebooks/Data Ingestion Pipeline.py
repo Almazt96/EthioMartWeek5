@@ -8,11 +8,20 @@ from telethon.sync import TelegramClient
 import pandas as pd
 import re
 import os
+from dotenv import load_dotenv
 
-# Configure Telegram API credentials
-api_id = os.getenv("TELEGRAM_API_ID") or '21483974'
-api_hash = os.getenv("TELEGRAM_API_HASH") or 'ecf78ee84312a3e7368578e5e29da1f8'
-phone = os.getenv("TELEGRAM_PHONE") or '251911699986'
+# Load environment variables from .env file
+load_dotenv()
+
+# Access variables
+api_id = os.getenv("TELEGRAM_API_ID")
+api_hash = os.getenv("TELEGRAM_API_HASH")
+phone = os.getenv("TELEGRAM_PHONE")
+
+print(f"API ID: {api_id}")
+print(f"API Hash: {api_hash}")
+print(f"Phone: {phone}")
+
 
 # Connect to Telegram client
 client = TelegramClient(phone, api_id, api_hash)
