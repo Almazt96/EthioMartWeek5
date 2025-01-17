@@ -20,11 +20,7 @@ client.start()
 print("Client connected successfully!")
 
 # Fetch messages from a channel
-<<<<<<< HEAD
 def fetch_channel_data(channel_username, limit=50):
-=======
-def fetch_channel_data(channel_username, limit=100):
->>>>>>> 8af4ca7cedebb665f282e8733b0214fb141b6adf
     messages = []
     for message in client.iter_messages(channel_username, limit=limit):
         if message.text:
@@ -38,21 +34,13 @@ def preprocess_amharic_text(df):
     return df
 
 # Fetch data from Telegram channel
-<<<<<<< HEAD
 channel_data = fetch_channel_data('meneshayeofficial')
-=======
-channel_data = fetch_channel_data('shegershoes123')
->>>>>>> 8af4ca7cedebb665f282e8733b0214fb141b6adf
 
 # Preprocess data
 clean_data = preprocess_amharic_text(channel_data)
 
 # Save data to CSV
-<<<<<<< HEAD
 clean_data.to_csv(r'C:\Users\Almazt\OneDrive - Ethiopian Airlines\Desktop\10 Academy\EthioMart-Week 5\data/telegram_meneshayeofficial_clean_data.csv', index=False)
-=======
-clean_data.to_csv('telegram_data.csv', index=False)
->>>>>>> 8af4ca7cedebb665f282e8733b0214fb141b6adf
 
 # Disconnect from Telegram client
 client.disconnect()
