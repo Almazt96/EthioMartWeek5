@@ -9,3 +9,10 @@ class TestExample(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+    
+import unittest
+
+class TestProcessData(unittest.TestCase):
+    def test_clean_data(self):
+        raw_data = "sample data"
+        self.assertEqual(clean_data(raw_data), "cleaned data")
